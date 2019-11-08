@@ -1,18 +1,20 @@
 ﻿using System;
+using Unit_Testing_With_NUnit.Interfaces;
 
 namespace Unit_Testing_With_NUnit.Classes
 {
     public class LogAnalyzer
     {
+        private IExtensionManager manager;
+
+        public LogAnalyzer(IExtensionManager mgr)
+        {
+            manager = mgr;
+        }
         public bool WasLastFileNameValid { get; set; }
         public bool IsValidLogFileName(string fileName)
         {
-            if (!fileName.EndsWith(".SLF",StringComparison.CurrentCultureIgnoreCase))
-            {
-                return false;
-            }
-            WasLastFileNameValid = true;
-            return true;
+            return manager.IsValid(fileName);
         }
     }
 }

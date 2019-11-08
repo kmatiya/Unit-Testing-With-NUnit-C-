@@ -1,6 +1,8 @@
 ﻿using System;
+using LogAn.UnitTests.FakeClasses;
 using NUnit.Framework;
 using Unit_Testing_With_NUnit.Classes;
+using Unit_Testing_With_NUnit.Interfaces;
 
 namespace LogAn.UnitTests.UnitTestClasses
 {
@@ -8,23 +10,44 @@ namespace LogAn.UnitTests.UnitTestClasses
     public class LogAnalyzerTests
     {
         [Test]
-        public void IsValidFileName_BadExtension_ReturnsFalse()
+        public void IsValidFileName_NameSupportedExtension_ReturnsTrue()
         {
-            LogAnalyzer analyzer = new LogAnalyzer();
-            bool result = analyzer.IsValidLogFileName("filewithbadextension.foo");
-            Assert.False(result);
-        }
-
-        [TestCase("filewithgoodextension.SLF")]
-        [TestCase("filewithgoodextension.slf")]
-        public void IsValidLogFileName_ValidExtensions_ReturnsTrue(string file)
-        {
-            LogAnalyzer analyzer = new LogAnalyzer();
-            bool result = analyzer.IsValidLogFileName(file);
-
+            FakeExtensionManager myFakeManager = new FakeExtensionManager();
+            myFakeManager.WillBeValid = true;
+            LogAnalyzer log = new LogAnalyzer(myFakeManager);
+            bool result = log.IsValidLogFileName("short.ext");
             Assert.True(result);
         }
 
+        [Test]
+        public void IsValidFileName_ExtManagerThrowsException_ReturnsFalse()
+        {
+            FakeExtensionManager myFakeExtensionManager = new FakeExtensionManager();
+            myFakeExtensionManager.WillThrow = new Exception("this is fake");
+            LogAnalyzer log = new LogAnalyzer(myFakeExtensionManager);
+            bool result = log.IsValidLogFileName("anything.anyextension");
+            Assert.False(result);
+        }
+//        [Test]
+//        public void IsValidFileName_BadExtension_ReturnsFalse()
+//        {
+//            LogAnalyzer analyzer = new LogAnalyzer(new FakeExtensionManager());
+//            bool result = analyzer.IsValidLogFileName("filewithbadextension.foo");
+//            Assert.False(result);
+//        }
+
+//        [TestCase("filewithgoodextension.SLF")]
+//        [TestCase("filewithgoodextension.slf")]
+//        public void IsValidLogFileName_ValidExtensions_ReturnsTrue(string file)
+//        {
+//            FakeExtensionManager myFakeExtensionManager = new FakeExtensionManager();
+//            LogAnalyzer analyzer = new LogAnalyzer(myFakeExtensionManager);
+//            bool result = analyzer.IsValidLogFileName(file);
+//
+//            Assert.True(result);
+//        }
+            
+        
 //        [Test]
 //        public void IsValidFileName_EmptyFileName_Throws()
 //        {
@@ -35,7 +58,7 @@ namespace LogAn.UnitTests.UnitTestClasses
 
         private LogAnalyzer MakeAnalyzer()
         {
-            return new LogAnalyzer();
+            return new LogAnalyzer(new FakeExtensionManager());
         }
 
         [Test]
@@ -57,6 +80,14 @@ namespace LogAn.UnitTests.UnitTestClasses
             la.IsValidLogFileName(file);
 
             Assert.AreEqual(expected,la.WasLastFileNameValid);
+        }
+
+        [Test]
+        //the unit of work under test:
+        public bool IsValidLogFileName(string fileName)
+        {
+            IExtensionManager mgr = new FileExtensionManager();
+            return mgr.IsValid(fileName);
         }
     }
 }
