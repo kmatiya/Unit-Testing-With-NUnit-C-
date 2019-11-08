@@ -11,6 +11,12 @@ namespace Unit_Testing_With_NUnit.Classes
         {
             manager = mgr;
         }
+
+        public IExtensionManager ExtensionManager
+        {
+            get { return  manager;}
+            set { manager = value; }
+        }
         public bool WasLastFileNameValid { get; set; }
         public bool IsValidLogFileName(string fileName)
         {
