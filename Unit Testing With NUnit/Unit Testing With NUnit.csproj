@@ -49,10 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ExtensionManagerFactory.cs" />
     <Compile Include="Classes\FileExtensionManager.cs" />
     <Compile Include="Classes\LogAnalyzer.cs" />
     <Compile Include="Classes\MemCalculator.cs" />
     <Compile Include="Interfaces\IExtensionManager.cs" />
+    <Compile Include="Interfaces\IWebService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

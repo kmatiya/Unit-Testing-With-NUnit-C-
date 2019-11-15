@@ -1,5 +1,6 @@
 ﻿using System;
 using LogAn.UnitTests.FakeClasses;
+using LogAn.UnitTests.MockObjects;
 using NUnit.Framework;
 using Unit_Testing_With_NUnit.Classes;
 using Unit_Testing_With_NUnit.Interfaces;
@@ -10,14 +11,13 @@ namespace LogAn.UnitTests.UnitTestClasses
     public class LogAnalyzerTests
     {
         [Test]
-        public void IsValidFileName_SupportedExtension_ReturnsTrue()
+        public void Analyze_TooShortFileName_CallsWebService()
         {
-            IExtensionManager myFakExtensionManager = new FakeExtensionManager();
-            // Create analyser and inject stub
-            LogAnalyzer log = new LogAnalyzer();
-            log.ExtensionManager = myFakExtensionManager;
-            bool result = log.IsValidLogFileName("text.txt");
-            Assert.True(result);
+            FakeWebService mockService = new FakeWebService();
+            LogAnalyzer log = new LogAnalyzer(mockService);
+            string tooShortFileName = "abc.ext";
+            log.Analyze(tooShortFileName);
+            StringAssert.Contains("Filename too short:abc.ext",mockService.LastError);
         }
     }
 }

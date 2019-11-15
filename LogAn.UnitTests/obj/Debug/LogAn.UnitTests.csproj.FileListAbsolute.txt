@@ -13,3 +13,18 @@ C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\L
 C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\LogAn.UnitTests\bin\Debug\NUnit3.TestAdapter.pdb
 C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\LogAn.UnitTests\bin\Debug\nunit.engine.dll
 C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\LogAn.UnitTests\bin\Debug\nunit.engine.api.dll
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\nunit.engine.dll
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\nunit.engine.api.dll
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\LogAn.UnitTests.dll
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\LogAn.UnitTests.pdb
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\nunit.framework.dll
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\Unit Testing With NUnit.exe
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\Unit Testing With NUnit.pdb
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\Unit Testing With NUnit.exe.config
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\nunit.framework.pdb
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\nunit.framework.xml
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\obj\Debug\LogAn.UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\obj\Debug\LogAn.UnitTests.dll
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\obj\Debug\LogAn.UnitTests.pdb

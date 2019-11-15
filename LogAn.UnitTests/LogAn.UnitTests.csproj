@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="FakeClasses\AlwaysValidFakeExtensionManager.cs" />
     <Compile Include="FakeClasses\FakeExtensionManager.cs" />
+    <Compile Include="MockObjects\FakeWebService.cs" />
     <Compile Include="UnitTestClasses\LogAnalyzerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitTestClasses\MemCalculatorUnitTests.cs" />

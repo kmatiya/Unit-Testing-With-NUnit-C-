@@ -5,17 +5,19 @@ namespace Unit_Testing_With_NUnit.Classes
 {
     public class LogAnalyzer
     {
+        private IWebService service;
 
-        private IExtensionManager manager;
-        public LogAnalyzer()
+        public LogAnalyzer(IWebService service)
         {
-            manager = ExtensionManagerFactory.Create();
+            this.service = service;
         }
 
-        public bool WasLastFileNameValid { get; set; }
-        public bool IsValidLogFileName(string fileName)
+        public void Analyze(string fileName)
         {
-            return manager.IsValid(fileName);
+            if (fileName.Length < 8)
+            {
+                service.LogError("Filename too short:"+ fileName);
+            }
         }
     }
 }
