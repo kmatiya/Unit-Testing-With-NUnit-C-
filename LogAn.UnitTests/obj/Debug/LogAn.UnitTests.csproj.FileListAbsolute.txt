@@ -28,3 +28,9 @@ C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\U
 C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\obj\Debug\LogAn.UnitTests.csprojResolveAssemblyReference.cache
 C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\obj\Debug\LogAn.UnitTests.dll
 C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\obj\Debug\LogAn.UnitTests.pdb
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\Castle.Core.dll
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\NSubstitute.dll
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\Castle.Core.xml
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\NSubstitute.xml
+C:\Users\kmatiya\Documents\Visual Studio 2017\Projects\Unit Testing With NUnit\Unit-Testing-With-NUnit-C-\LogAn.UnitTests\bin\Debug\System.Threading.Tasks.Extensions.xml
